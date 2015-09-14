@@ -1,0 +1,110 @@
+/*
+Author: Justyna Machalica;
+*/
+
+
+* {
+/*margin: 0;*/
+padding: 0;
+border: 0;
+vertical-align: baseline;
+text-decoration: none;
+outline: 0;
+} /*style reset*/
+
+
+body{
+	background-color: #E8DD95;
+	color: #444;
+	font-family: 'Helvetica', Sans-Serif;
+	font-size: 16px;
+}
+#parent-modal{
+	height:100%;
+	width: 100%;
+	vertical-align: middle;
+}
+#modal{
+	background-color: #FFA7A4;
+	overflow: auto;
+
+}
+#close-container{
+	width:100%;
+	top:0;
+	text-align: right;
+	float: none;
+}
+#close{
+	background-color: #B283E8;
+	border-radius: 50%;
+	top:0;
+	height:20px;
+	width: 20px;
+	color:#fff;
+	font-weight: bold;
+	line-height: 20px;
+}
+.column1, .column2{
+	text-align: justify;
+}
+#watch-container{
+	text-align: center;
+	width: 100%;
+	padding-bottom:10px;
+	float:none;
+}
+#watch{
+	background-color: #B283E8;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 6px;
+	padding:5px;
+}
+
+@media screen and (max-width: 768px) {
+	#modal{
+		width:98%;
+		margin: 1% 1% 2% 1%;
+		height: 96vh;
+
+	}
+	#close-container{
+		display: none;
+	}
+	.column1, .column2{
+		width:96%;
+		margin: 2% 2% 0 2%;
+		float:none;
+	}
+	#watch-container{
+		padding-top: 20px;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	#modal{
+		max-width:500px;
+		height:340px;
+		border-radius: 10px;
+		bottom:50%;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-top:-170px;
+		margin-left:-250px;
+	}
+	.column1{
+		float: left;
+		margin: 4px 4px 20px 16px;
+		width: 44%;
+	}
+	.column2{
+		float:right;
+		margin: 4px 16px 20px 4px;
+		width: 44%;
+	}
+	#watch-container{
+		padding-top:50px;
+	}
+}
